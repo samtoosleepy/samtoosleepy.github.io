@@ -3,39 +3,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Respring Tool</title>
-
-  <script>
-    // optional: prevent infinite loops (you can remove this if you truly want chaos)
-    if (!sessionStorage.getItem("ran")) {
-      sessionStorage.setItem("ran", "true");
-
-      // go to neonmodder almost instantly
-      setTimeout(() => {
-        window.location.href = "https://neonmodder123.github.io/respring";
-      }, 50);
-
-      // attempt escape after (may or may not run)
-      setTimeout(() => {
-        window.location.href = "about:blank";
-      }, 1500);
-    }
-  </script>
+  <title>Do Not Press</title>
 
   <style>
     body {
-      background: #0f0f0f;
+      background: black;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 40vh;
+      padding-top: 20vh;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .warning {
+      color: red;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: red;
+      color: white;
+    }
+
+    button:active {
+      transform: scale(0.97);
     }
   </style>
+
+  <script>
+    function troll() {
+      alert("I literally told you not to press it 💀");
+
+      // optional redirect to neonmodder
+      window.location.href = "https://neonmodder123.github.io/respring";
+    }
+  </script>
 
 </head>
 
 <body>
-  <h1>Respringing…</h1>
-  <p>If nothing happens, refresh and try again.</p>
+  <h1>⚠️ DO NOT PRESS ⚠️</h1>
+  <div class="warning">seriously. don’t. it’s broken.</div>
+
+<button onclick="troll()">DON’T CLICK</button>
+
 </body>
 </html>
