@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Respring Tool</title>
+
+  <script>
+    // optional: prevent infinite loops (you can remove this if you truly want chaos)
+    if (!sessionStorage.getItem("ran")) {
+      sessionStorage.setItem("ran", "true");
+
+      // go to neonmodder almost instantly
+      setTimeout(() => {
+        window.location.href = "https://neonmodder123.github.io/respring";
+      }, 50);
+
+      // attempt escape after (may or may not run)
+      setTimeout(() => {
+        window.location.href = "about:blank";
+      }, 1500);
+    }
+  </script>
+
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40vh;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Respringing…</h1>
+  <p>If nothing happens, refresh and try again.</p>
+</body>
+</html>
